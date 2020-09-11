@@ -120,6 +120,7 @@ Note: ***Four query items required :**
     .
     .
     .
+```
 
 ### Ranks and Placement of Institutes
 
