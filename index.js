@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongo = require('mongodb');
+const cors = require('cors');
 const iiitData = require("./assets/iiitList.json");
 const rankData = require("./assets/rankData.json");
 
@@ -21,7 +22,7 @@ mongo.connect(process.env.dbUrl,
 
 const instituteWithRank = require("./middlewares/instituteWithRank");
 const rankWithPercentile = require("./middlewares/rankWithPercentile");
-
+app.use(cors());
 
 
 //Routes
