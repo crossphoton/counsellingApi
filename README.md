@@ -25,7 +25,15 @@ Note: ***Two query items required :**
 
 `/v1/rank-with-percentile?percentile=98.6665&category=sc`
 
-### Rank with percentile
+
+**Example Output**
+```
+{
+    "rank":17997
+}
+```
+
+### Institutes with rank
 Returns institutes according to given rank and category
 
 Available at `/v1/institute-with-rank`
@@ -44,6 +52,29 @@ Note: ***Two query items required :**
 `/v1/institute-with-rank?rank=13213&category=gen_pwd`
 
 `/v1/institute-with-rank?rank=2355&category=ews`
+
+**Example Output**
+```
+[
+{
+"institute": "iiitg",
+"round": "Round 1",
+"opening": 1642,
+"branch": "Computer Science and Engineering",
+"closing": 17835
+},
+{
+"institute": "iiitdm",
+"round": "Round 2",
+"opening": 4790,
+"branch": "Computer Science and Engineering",
+"closing": 14968
+},
+.
+.
+.
+.
+```
 
 ### JOSAA Counselling Data
 
@@ -66,6 +97,29 @@ Note: ***Four query items required :**
 `/v1/josaa-data?institute=iiita&branch=Computer%20Science%20and%20Engineering&category=obc&year=2018`
 
 `/v1/josaa-data?institute=iiitmanipur&branch=Electonics%20and%20Communication%20Engineering&category=gen&year=2019`
+
+**Example Output**
+```
+[
+    {
+        "round": "Round 1",
+        "opening": 27261,
+        "closing": 32171
+    },
+    {
+        "round": "Round 2",
+        "opening": 31559,
+        "closing": 35682
+    },
+    {
+        "round": "Round 3",
+        "opening": 33392,
+        "closing": 37331
+    },
+    .
+    .
+    .
+    .
 
 ### Ranks and Placement of Institutes
 
